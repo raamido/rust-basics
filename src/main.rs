@@ -1,9 +1,10 @@
 fn main() {
-    /*  Functions  */
-    let sum1 = sum(45, 66);
-    println!("{sum1}")
-}
+    /*  Conditions  */
+    let age = 18;
 
-fn sum(n1: i32, n2: i32) -> i32 {
-    return n1 + n2;
+    if age >= 18 {
+        println!("you're allowed to view this content ✔")
+    } else {
+        println!("you're not allowed to view this content ❌")
+    }
 }
