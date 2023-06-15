@@ -1,10 +1,10 @@
 fn main() {
-    /*  Conditions  */
-    let age = 18;
+    /*  Match Statement  */
+    let gender = "male";
 
-    if age >= 18 {
-        println!("you're allowed to view this content ✔")
-    } else {
-        println!("you're not allowed to view this content ❌")
+    match gender {
+        "male" => println!("user is M"),
+        "female" => println!("user is F"),
+        _ => println!("user didn't specifiy his / her gender"),
     }
 }
