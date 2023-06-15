@@ -1,10 +1,13 @@
 fn main() {
-    /*  Match Statement  */
-    let gender = "male";
+    /*  loop statement  */
+    let mut index = 0;
 
-    match gender {
-        "male" => println!("user is M"),
-        "female" => println!("user is F"),
-        _ => println!("user didn't specifiy his / her gender"),
+    loop {
+        if index == 51 {
+            break;
+        }
+
+        println!("{index}");
+        index += 1;
     }
 }
