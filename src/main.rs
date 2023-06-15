@@ -1,12 +1,7 @@
 fn main() {
-    /*  loop statement  */
+    /*  while loop  */
     let mut index = 0;
-
-    loop {
-        if index == 51 {
-            break;
-        }
-
+    while index < 110 {
         println!("{index}");
         index += 1;
     }
