@@ -1,16 +1,12 @@
 fn main() {
-    /*  Structs  */
+    /*  Tuples  */
 
-    struct Rectangle {
-        width: f32,
-        height: f32,
-    }
+    let coordinates = (1456.11, 2587.1);
+    println!("{:?} {:?}", coordinates.0, coordinates.1);
 
-    let rect1 = Rectangle {
-        width: 11.3,
-        height: 24.2,
-    };
+    // Tuples support Desctructring 💥
+    let (x, y) = coordinates;
 
-    println!("{:?}", rect1.width);
-    println!("{:?}", rect1.height);
+    println!("{x}");
+    println!("{y}")
 }
