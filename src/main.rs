@@ -1,21 +1,16 @@
 fn main() {
-    /*  Enumeration  */
+    /*  Structs  */
 
-    enum Roles {
-        User,
-        Admin,
-        SuperAdmin,
+    struct Rectangle {
+        width: f32,
+        height: f32,
     }
 
-    fn match_role(role: Roles) {
-        match role {
-            Roles::User => println!("User"),
-            Roles::Admin => println!("Admin"),
-            Roles::SuperAdmin => println!("Super Admin"),
-        }
-    }
+    let rect1 = Rectangle {
+        width: 11.3,
+        height: 24.2,
+    };
 
-    match_role(Roles::User);
-    match_role(Roles::Admin);
-    match_role(Roles::SuperAdmin);
+    println!("{:?}", rect1.width);
+    println!("{:?}", rect1.height);
 }
